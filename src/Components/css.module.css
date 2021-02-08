@@ -1,0 +1,66 @@
+/* div, html {
+    background-color: #DDA0DD;
+} */
+.head {
+  text-align: center;
+  text-decoration: underline;
+  color: #18a2b8;
+  margin: 20px;
+}
+.head:hover {
+  text-align: center;
+  text-decoration: underline;
+  /* color: #18a2b8; */
+  margin: 20px;
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: #18a2b8;
+  }
+  50% {
+    color: #0004ff;
+  }
+  100% {
+    color: #0d831d;
+  }
+}
+
+.card {
+  display: inline-block;
+  z-index: -1;
+  width: 17rem;
+  text-align: center;
+  margin: 15px;
+}
+
+.card:hover {
+  -webkit-animation: scale 0.3s linear;
+  -moz-animation: scale 0.3s linear;
+  animation: scale 0.3s linear;
+  transform: scale(1.1);
+  animation-fill-mode: forwards;
+  position: initial;
+  z-index: 111;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+    -webkit-box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.cardImg {
+  width: 100%;
+  height: 20vh;
+}
+.card2 {
+  height: 10vh;
+  width: 150px;
+}
